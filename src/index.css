@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"); */
+
+@layer base {
+  @font-face {
+    font-family: Roboto;
+    src: local("Roboto"), url("./fonts/Roboto-Regular.ttf"), format("ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: local("Roboto"), url("./fonts/Roboto-Italic.ttf"), format("ttf");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: local("Roboto"), url("./fonts/Roboto-Bold.ttf"), format("ttf");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: local("Roboto"), url("./fonts/Roboto-BoldItalic.ttf"), format("ttf");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  body {
+    @apply text-white;
+  }
+
+  select,
+  option {
+    @apply text-black;
+  }
+}
+
+/* Scrollbar - Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f9fafb80 #000000;
+}
+
+/*  Scrollbar - Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #f9fafb80;
+  border-radius: 20px;
+  border: 3px solid #000000;
+}
