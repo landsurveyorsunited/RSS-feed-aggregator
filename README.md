@@ -1,4 +1,4 @@
-# [RSS Feed](https://rss-feed-30b89.firebaseapp.com)
+# [RSS Feed Aggregator Using React JS Website ](https://rss-feed-30b89.firebaseapp.com)
 
 A customisable RSS Feed with dynamic configuration and category based articles.
 
